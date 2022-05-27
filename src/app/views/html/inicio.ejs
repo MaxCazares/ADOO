@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/inicio.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <title>Town Market</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a href="/" class="logo"><i class="fas fa-carrot"></i> <strong>Town Market</strong></a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="item" href="/faq">Preguntas Frecuentes</a>
+                    <a class="item" href="/ayuda">Ayuda</a>
+                </div>
+                <div class="navbar-end">
+                    <form action="/consulta" method="post">
+                        <div class="search">
+                            <input type="text" name="busqueda" id="busqueda" placeholder="Buscar un negocio">
+                            <button type="submit"><i class="fas fa-search"> </i></button>
+                        </div>
+                    </form>
+                    <div class="buttons">
+                        <a href="/registro" class="registro"><strong>Registrate</strong></a>
+                        <a href="/iniciar" class="inicio">Iniciar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="negocio">
+            <a href="/ferreteria"><img class="uno" src="https://www.mndelgolfo.com/wp-content/uploads/2019/08/1.jpg" alt=""></a>
+            <h1 class="txt">Ferreteria</h1>
+        </div>
+        <div class="negocio">
+            <a href="/lavanderia"><img class="uno" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.gruporoig.es%2Fimg%2Flavanderia-03.jpg&f=1&nofb=1" alt=""></a>
+            <h1 class="txt">Lavanderia</h1>
+        </div>
+        <div class="negocio">
+            <a href="/tienda"><img class="uno" src="https://www.elsoldesinaloa.com.mx/local/uv9y1h-abarrotes/alternates/LANDSCAPE_768/abarrotes" alt=""></a>
+            <h1 class="txt">Tiendas</h1>
+        </div>
+        <div class="negocio">
+            <a href="/papeleria"><img class="uno" src="https://www.elsoldetoluca.com.mx/incoming/l2fx8n-papelerias-registran-perdidas-por-entrega-de-utiles-escolares-de-gobierno-1-696x522.jpg/alternates/LANDSCAPE_768/papelerias-registran-perdidas-por-entrega-de-utiles-escolares-de-gobierno-1-696x522.jpg" alt=""></a>
+            <h1 class="txt">Papeleria</h1>
+        </div>
+        <div class="negocio">
+            <a href="/recauderia"><img class="uno" src="https://nepantla.mx/wp-content/uploads/2018/06/SEBAS3.jpg" alt=""></a>
+            <h1 class="txt">Recauderia</h1>
+        </div>
+        <div class="negocio" class="uno">
+            <a href="/carniceria"><img class="seis" src="https://www.winterhalter.com/fileadmin/user_upload/Website/Mexico/sectores/carnicerias/buchmann/referencia-winterhalter-carniceria-buchmann-2.jpg" alt=""></a>
+            <h1 class="txt">Carnicería</h1>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="nosotros">
+            <h2>Sobre nosotros</h2>
+            <p>
+                <br>Town Market es un proyecto unicamente 
+                <br>academico sin fines de lucro.
+            </p>
+        </div>
+        <div class="contacto">
+            <h2>Contacto</h2><br>            
+            <p>
+                <i class="fas fa-envelope"></i>&nbsp; contactoTM@townmarket.com
+                <br>El correo debe de tener la siguiente estructura. <br><br>
+                Solicitud de apoyo.
+                <br>Descripción del problema y número de identificación de usuario.
+                <br> <br>Descripción del problema.<br>
+                Especificar la situación para atender el problema de la mejor manera.
+            </p>
+        </div>
+        <div class="disclaimer">
+            <h2>Politica de privacidad</h2>
+            <p>
+                <br> Town Market no se hace responsable 
+                <br> del mal uso que se le pueda dar a la 
+                <br> información por parte de terceros.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

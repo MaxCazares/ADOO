@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/faq.css">
+    <title>Ayuda</title>
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a href="/" class="logo"><i class="fas fa-carrot"></i> <strong>Town Market</strong></a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="item" href="/faq">Preguntas Frecuentes</a>
+                <a class="item" href="/ayuda">Ayuda</a>
+            </div>
+            <div class="navbar-end">
+                <form action="/consulta" method="post">
+                    <div class="search">
+                        <input type="text" name="busqueda" id="busqueda" placeholder="Buscar un negocio">
+                        <button type="submit"><i class="fas fa-search"> </i></button>
+                    </div>
+                </form>
+                <div class="buttons">
+                    <a href="/registro" class="registro"><strong>Registrate</strong></a>
+                    <a href="/iniciar" class="inicio">Iniciar sesión</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="main">
+        <div class="texto">
+            <br><br>
+            <p><i class="far fa-comment"></i> Preguntas frecuentes</p>
+            <!-- <br><br><br> -->
+        <pre>
+¿Por qué debería de usar los servicios de Town Market?
+Porque somos un grupo de estudiantes que busca el como apoyar a la comunidad<br> a pasar por un mal momento en el que todos<br> nos hemos visto afectados, esperando que la herramienta creada<br> sea de utilidad para los pequeños y micro negocios.
+<br><br>¿Mis datos se mantendrán seguros?
+Sí, nosotros no haremos un mal uso con la información que los usuarios <br>proporcionen, solo mostraremos la información más importante <br>para que sus proximos clientes sepan en dode contactarse <br>y dirigirse para obtener alguno de sus servicios.
+<br><br>¿Son intermediarios entre los negocios y los compradores?
+No, debido a que es un proyecto estudiantil y sin fin de lucro, <br>nuestra finalidad es solo apoyar a las personas más afectadas<br> en esta sitación mundial, proveyéndoles / brindando una herramienta <br>la cual puedan usar para pasar este amargo tiempo.
+        </pre>
+        </div>
+    </main>
+</body>
+</html>

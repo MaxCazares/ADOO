@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="../css/registro.css">
+    <title>Registrarse</title>
+</head>
+<body>
+    <form action="/registrarse" method="post">
+        <div class="container">
+            <div class="logo">
+                <img src="../logo.png" alt="">
+            </div>
+            <div class="infoNegocio">                
+                <p>Información de tu negocio</p>
+                <input type="text" placeholder="Nombre del negocio" name="nombre_neg" id="nombreNegocio">
+                <select name="giro" id="giroNegocio">
+                    <option value="">Eliga una opción</option>
+                    <option value="Carnicería">Carnicería</option>
+                    <option value="Cocina económica">Cocina económica</option>
+                    <option value="Cremería">Cremería</option>
+                    <option value="Ferretería">Ferretería</option>
+                    <option value="Fontanería">Fontanería</option>
+                    <option value="Lavandería">Lavandería</option>
+                    <option value="Papelería">Papelería</option>
+                    <option value="Recaudería">Recaudería</option>
+                    <option value="Taller mecánico">Taller mecánico</option>
+                    <option value="Tienda">Tienda</option>
+                    <option value="Tintorería">Tintorería</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <input type="text" placeholder="Nombre del propietario" name="nombre_prop" id="nombrePropietario">
+            </div>
+            <div class="dirNegocio">
+                <p>Dirección de tu negocio</p>
+                <input type="text" placeholder="Calle" name="calle" id="calleNegocio">
+                <input type="text" placeholder="Numero" name="numero" id="numeroNegocio">
+                <input type="text" placeholder="Colonia" name="colonia" id="coloniaNegocio">
+                <input type="text" placeholder="Municipio/Delegación" name="municipio" id="mun_del">
+            </div>
+            <div class="infoContacto">
+                <p>Información de contacto</p>
+                <input type="text" placeholder="Número telefónico" name="tel_cont" id="telNegocio">
+                <input type="email" placeholder="Correo electrónico" name="correo_cont" id="correoNegocio">
+                <p>¿Cuenta con servicio a domicilio?</p>
+                <select name="serv_dom" id="servicioDomicilio">
+                    <option value="Si">Si</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="infoCuenta">
+                <p>Información de la cuenta</p>
+                <input type="email" placeholder="Correo electrónico" name="correo_cuenta" id="correoCuenta">
+                <input type="password" placeholder="Contraseña" name="contra" id="contraseñaCuentaCuenta">
+            </div>
+            <div class="botones">
+                <button type="submit">Registrarse</button>
+                <button type="reset">Borrar</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

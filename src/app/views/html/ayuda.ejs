@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/ayuda.css">
+    <title>Ayuda</title>
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a href="/" class="logo"><i class="fas fa-carrot"></i> <strong>Town Market</strong></a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="item" href="/faq">Preguntas Frecuentes</a>
+                <a class="item" href="/ayuda">Ayuda</a>
+            </div>
+            <div class="navbar-end">
+                <form action="/consulta" method="post">
+                    <div class="search">
+                        <input type="text" name="busqueda" id="busqueda" placeholder="Buscar un negocio">
+                        <button type="submit"><i class="fas fa-search"> </i></button>
+                    </div>
+                </form>
+                <div class="buttons">
+                    <a href="/registro" class="registro"><strong>Registrate</strong></a>
+                    <a href="/iniciar" class="inicio">Iniciar sesión</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="main">
+        <pre class="info">
+Dudas referentes sobre el registro de usuario.
+El nuevo usuario deberá de proporcionar toda la información que se requiera
+en los campos de entrada, junto con información verdadera y actualizada.
+
+Para hacer contacto con nosotros, el usuario registrado y no registrado,
+podrá hacer uso del medio de contacto que se porporcionó,
+solo que en el asunto, se deberá de especificar el quien esta realizando
+la solicitud:
+
+-   Caso de que sea usuario registrado, deberá de colocar el numero de
+    identificación unico.
+-   Caso de que no sea un usuario registrado, deberá de proporcionar
+    sus datos, con la finalidad de poder cotejar los datos de manera
+    correcta.
+        </pre>
+        <div class="manual">
+            <br><br>
+            <p>Para conocer más a profundidad Town Market</p>
+            <br><br>
+            <p>Clic para leer el manual de usuario</p>
+            <br><br>
+            <a href="../manual.pdf"><i class="fas fa-book-open"></i></a>
+        </div>
+    </main>
+</body>
+</html>

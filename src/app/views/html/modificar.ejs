@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="../css/registro.css">
+    <title>Actualizar Información</title>
+</head>
+<body>
+    <form action="/cambiar" method="post">
+        <div class="container">
+            <div class="logo">
+                <img src="../logo.png" alt="">
+            </div>
+            <div class="infoNegocio">                
+                <p>Información de tu negocio</p>
+                <input type="text" name="nombre_neg" id="nombreNegocio" value="<%= resultado[0].nombre_neg %>">
+                <select name="giro" id="giroNegocio">
+                    <option value="">Eliga una opción</option>
+                    <option value="Carnicería">Carnicería</option>
+                    <option value="Cocina económica">Cocina económica</option>
+                    <option value="Cremería">Cremería</option>
+                    <option value="Ferretería">Ferretería</option>
+                    <option value="Fontanería">Fontanería</option>
+                    <option value="Lavandería">Lavandería</option>
+                    <option value="Papelería">Papelería</option>
+                    <option value="Recaudería">Recaudería</option>
+                    <option value="Taller mecánico">Taller mecánico</option>
+                    <option value="Tienda">Tienda</option>
+                    <option value="Tintorería">Tintorería</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <input type="text" name="nombre_prop" id="nombrePropietario" value="<%= resultado[0].nombre_prop %>">
+            </div>
+            <div class="dirNegocio">
+                <p>Dirección de tu negocio</p>
+                <input type="text" name="calle" id="calleNegocio" value="<%= resultado[0].calle %>">
+                <input type="text" name="numero" id="numeroNegocio" value="<%= resultado[0].numero %>">
+                <input type="text" name="colonia" id="coloniaNegocio" value="<%= resultado[0].colonia %>">
+                <input type="text" name="municipio" id="mun_del" value="<%= resultado[0].municipio %>">
+            </div>
+            <div class="infoContacto">
+                <p>Información de contacto</p>
+                <input type="text" name="tel_cont" id="telNegocio" value="<%= resultado[0].tel_cont %>">
+                <input type="email" name="correo_cont" id="correoNegocio" value="<%= resultado[0].correo_cont %>">
+                <p>¿Cuenta con servicio a domicilio?</p>
+                <select name="serv_dom" id="servicioDomicilio">
+                    <option value="Si">Si</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div>
+                <input type="hidden" name="correo_cuenta" id="correoCuenta" value=<%= ""+resultado[0].correo_cuenta %>>
+                <input type="hidden" name="contra" id="contraseñaCuentaCuenta" value=<%= ""+resultado[0].contra %>>
+            </div>
+            <div class="botones">
+                <button type="submit">Actualizar</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

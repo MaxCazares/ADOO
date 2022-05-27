@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/negocio.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <title>Ferreteria</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a href="/" class="logo"><i class="fas fa-carrot"></i> <strong>Town Market</strong></a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="item" href="/faq">Preguntas Frecuentes</a>
+                    <a class="item" href="/ayuda">Ayuda</a>
+                </div>
+                <div class="navbar-end">
+                    <form action="/consulta" method="post">
+                        <div class="search">
+                            <input type="text" name="busqueda" id="busqueda" placeholder="Buscar un negocio">
+                            <button type="submit"><i class="fas fa-search"> </i></button>
+                        </div>
+                    </form>
+                    <div class="buttons">
+                        <a href="/registro" class="registro"><strong>Registrate</strong></a>
+                        <a href="/iniciar" class="inicio">Iniciar sesión</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="titulo">
+            <img class="title" src="https://www.mndelgolfo.com/wp-content/uploads/2019/08/1.jpg" alt="">
+            <h1 class="texto">Ferreteria</h1>
+        </div>
+        <% for(var i = 0; i < resultado.length; ++i) { %>
+            <div class="negocio">
+                <br>Negocio: <%= resultado[i].nombre_neg %><br>
+                Direccion:<br><%= resultado[i].calle %> #<%= resultado[i].numero %><br>
+                <%= resultado[i].colonia %>, <%= resultado[i].municipio %><br>
+                Contacto:<br><%= resultado[i].tel_cont %><br><%= resultado[i].correo_cont %><br>
+                Cuenta con Servicio a Domicilio: <%= resultado[i].serv_dom %>
+            </div>
+        <% } %>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

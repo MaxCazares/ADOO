@@ -1,0 +1,108 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+.container{
+    width: 800px;
+    height: 620px;
+    background-color: #fff;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 0 15px 0 15px;
+    box-shadow: 0px 25px 36px 12px rgba(0, 0, 0, 0.21);
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+.logo{
+    grid-column: 1/4;
+    grid-row: 1;
+}
+.logo img{
+    margin-top: 15px;
+    height: 160px;
+}
+.infoNegocio{
+    grid-column: 1;
+    grid-row: 2;
+}
+.infoCuenta{
+    grid-column: 1/4;
+    grid-row: 3;
+}
+.dirNegocio{
+    grid-column: 2;
+    grid-row: 2;
+}
+.infoContacto{
+    grid-column: 3;
+    grid-row: 2;
+}
+.botones{
+    grid-column: 1/4;
+    grid-row: 4;
+}
+.infoNegocio input[type=text],
+.dirNegocio input[type=text],
+.infoContacto input[type=text],
+.infoContacto input[type=email],
+.infoCuenta input[type=email],
+.infoCuenta input[type=password]{
+    width: 230px;
+    height: 30px;
+    margin: 5px;    
+    border-color: rgba(0, 0, 0, .2);
+    color: #000;
+}
+.infoNegocio select,
+.infoContacto select{
+    height: 33px;
+    margin: 5px;    
+    border-color: rgba(0, 0, 0, .2);
+    color: #32A262;
+}
+.infoNegocio select{
+    width: 240px;
+}
+.infoContacto select{
+    width: 100px;
+}
+.infoNegocio input[type=text]::placeholder,
+.dirNegocio input[type=text]::placeholder,
+.infoContacto input[type=text]::placeholder,
+.infoContacto input[type=email]::placeholder,
+.infoCuenta input[type=email]::placeholder,
+.infoCuenta input[type=password]::placeholder{
+    color: #32A262;
+    font-weight: lighter;
+}
+.infoNegocio p,
+.dirNegocio p,
+.infoContacto p,
+.infoCuenta p{
+    font-size: 18px;
+    color: #000;
+}
+.botones button{
+    width: 110px;
+    height: 40px;
+    background-color: #32A262;
+    color: #f5f5f5;
+    text-align: center;
+    margin: auto 10px;
+    padding: 5px;
+    border-radius: 7px;
+    font-size: 17px;
+    box-shadow: 0px 5px 4px 2px rgba(0, 0, 0, .5);
+    border: 0px solid;
+    font-weight: lighter;
+}
